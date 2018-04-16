@@ -594,34 +594,58 @@
     <div class="container">
         <div class="row">
             <h2>Contact</h2>
-            <p>Contact us and let us know your comments and concerns. We appreciate feedback of any kind to better our services. </p>
-
-            <div class="col-lg-6 col-md-6">
-                <div class="input-group input-group-lg">
-                    <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-                    <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Full Name">
-                </div>
-                <div class="input-group input-group-lg">
-                    <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                    <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Email Address">
-                </div>
-                <div class="input-group input-group-lg">
-                    <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                    <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone Number">
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6">
-                <div class="input-group">
-                   <textarea cols="88" rows="6" class="form-control" style="margin: 0px; height: 189px; width: 557px;"></textarea>
-                </div>
+<form name="contactform" method="post" action="send_form_email.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+ </td>
+</tr>
+</table>
+</form>
                  <button class="btn btn-success" data-toggle="modal" data-target="#Modal3">Submit Your Message</button>
 
-<form action="upload.php" method="button" enctype="multipart/form-data">
-    Select image to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
-</form>
+
 
                       <!-- Modal -->
                       <div class="modal fade" id="Modal3" role="dialog">
